@@ -20,6 +20,7 @@ h5,
 h6,
 p {
   margin: 0;
+  font-size: inherit;
 }
 
 ul {
@@ -39,4 +40,12 @@ a {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  text-decoration: none;
+}
+
+img {
+  inline-size: 100%;
 }
