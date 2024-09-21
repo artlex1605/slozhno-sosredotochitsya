@@ -1,0 +1,1 @@
+https://github.com/artlex1605/slozhno-sosredotochitsya.git
