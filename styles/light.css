@@ -11,10 +11,8 @@
   --button-color: var(--main-color);
   --outline: 1px solid var(--main-color);
   --outline-color-hover: rgba(50, 49, 45, 0.4);
-
-  background-color: var(--accent-color);
-  background: url('../images/cover-image-light.png');
-  background-attachment: fixed;
+  --background: url('../images/cover-image-light.png');
+  --background-color: var(--accent-color-alt);
 }
 
 .page.theme_light .header__decorative-element-rec {
@@ -24,5 +22,34 @@
 @media (width >= 1024px) {
   .page.theme_light {
     --text-shadow: #ff0070;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --main-color: #353430;
+    --accent-color: #ff8dcb;
+    --accent-color-alt: #ffc2e6;
+
+    --header-title: var(--accent-color-alt);
+    --section-title: var(--main-color);
+    --title-decor: var(--main-color);
+    --title-color: var(--accent-color-alt);
+    --text-shadow: var(--accent-color);
+    --button-color: var(--main-color);
+    --outline: 1px solid var(--main-color);
+    --outline-color-hover: rgba(50, 49, 45, 0.4);
+    --background: url('../images/cover-image-light.png');
+    --background-color: var(--accent-color-alt);
+  }
+
+  .page.theme_auto .header__decorative-element-rec {
+    display: none;
+  }
+  
+  @media (width >= 1024px) {
+    .page.theme_auto {
+      --text-shadow: #ff0070;
+    }
   }
 }
